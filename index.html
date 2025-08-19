@@ -52,16 +52,23 @@
             margin-top: 0.25rem;
         }
         
+        /* Nuevo contenedor para el marco del video */
+        .video-frame {
+            background-color: #00245a; /* Azul del logo */
+            border-radius: 20px; /* Esquinas más redondeadas */
+            padding: 0.75rem; /* Espacio para el marco */
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            animation: fadeInUp 0.5s ease-out 0.1s both;
+        }
+
         .video-container {
             position: relative;
             overflow: hidden;
             width: 100%;
             padding-top: 56.25%; /* 16:9 Aspect Ratio */
-            margin-top: 2rem;
-            margin-bottom: 1.5rem; /* Ajustado */
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            animation: fadeInUp 0.5s ease-out 0.1s both;
+            border-radius: 12px; /* Redondeo interior */
         }
 
         .video-container iframe {
@@ -210,9 +217,11 @@
             <p class="subtitle">Agencia de Marketing Digital</p>
         </header>
 
-        <!-- Video Integrado -->
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/fOi66ypvP8I?autoplay=1&mute=1&loop=1&playlist=fOi66ypvP8I&controls=0&modestbranding=1&showinfo=0&rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <!-- Video con Marco Azul -->
+        <div class="video-frame">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/fOi66ypvP8I?autoplay=1&mute=1&loop=1&playlist=fOi66ypvP8I&controls=0&modestbranding=1&showinfo=0&rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
         </div>
 
         <!-- Sección de Cita -->
@@ -271,3 +280,4 @@
 
 </body>
 </html>
+
